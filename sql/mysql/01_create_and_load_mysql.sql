@@ -4,7 +4,7 @@
 -- from data/clean/ (dates already ISO, snake_case headers, empty cells -> NULL).
 --
 -- BEFORE RUNNING:
---   1. Replace every  /Users/arpitasharma/Downloads/stock_market_sql  below with the real folder path
+--   1. Replace every  /FULL/PATH/TO/stock_market_sql  below with the real folder path
 --      (use forward slashes, e.g. C:/Users/you/stock_market_sql  on Windows).
 --   2. Enable local_infile:   SET GLOBAL local_infile = 1;
 --      Workbench: Edit Connection > Advanced > Others: add  OPT_LOCAL_INFILE=1
@@ -23,7 +23,7 @@ CREATE TABLE bajaj_auto (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/bajaj_auto.csv' INTO TABLE bajaj_auto
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/bajaj_auto.csv' INTO TABLE bajaj_auto
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,
@@ -42,7 +42,7 @@ CREATE TABLE eicher_motors (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/eicher_motors.csv' INTO TABLE eicher_motors
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/eicher_motors.csv' INTO TABLE eicher_motors
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,
@@ -61,7 +61,7 @@ CREATE TABLE hero_motocorp (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/hero_motocorp.csv' INTO TABLE hero_motocorp
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/hero_motocorp.csv' INTO TABLE hero_motocorp
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,
@@ -80,7 +80,7 @@ CREATE TABLE infosys (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/infosys.csv' INTO TABLE infosys
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/infosys.csv' INTO TABLE infosys
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,
@@ -99,7 +99,7 @@ CREATE TABLE tcs (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/tcs.csv' INTO TABLE tcs
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/tcs.csv' INTO TABLE tcs
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,
@@ -118,7 +118,7 @@ CREATE TABLE tvs_motors (
   deliverable_qty BIGINT, pct_deli_qty DECIMAL(6,2),
   spread_high_low DECIMAL(12,2), spread_close_open DECIMAL(12,2)
 );
-LOAD DATA LOCAL INFILE '/Users/arpitasharma/Downloads/stock_market_sql/data/clean/tvs_motors.csv' INTO TABLE tvs_motors
+LOAD DATA LOCAL INFILE '/FULL/PATH/TO/stock_market_sql/data/clean/tvs_motors.csv' INTO TABLE tvs_motors
 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES
 (@d,@o,@h,@l,@c,@w,@s,@tr,@to,@dq,@pd,@shl,@sco)
 SET `date` = @d,

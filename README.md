@@ -51,3 +51,7 @@ Tested on MySQL (Homebrew, port 3307) from a fresh database with zero errors.
 Output is saved in `outputs/mysql/final_run_output.txt` and matches the SQLite results
 (56 Buys / 57 Sells, TCS +52.4% and Infosys +38.2% after bonus adjustment).
 Before running elsewhere, change the `LOAD DATA LOCAL INFILE` paths in the SQL file to your own folder.
+
+## Preview
+![Bajaj signals](outputs/charts/01_bajaj_signals.png)
+![TCS and Infosys bonus adjustment](outputs/charts/03_tcs_infosys_adjusted.png)
