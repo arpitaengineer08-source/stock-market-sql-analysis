@@ -44,3 +44,10 @@ Tested on MySQL (Homebrew, port 3307) from a fresh database with zero errors.
 Output is saved in `outputs/mysql/final_run_output.txt` and matches the SQLite results
 (56 Buys / 57 Sells, TCS +52.4% and Infosys +38.2% after bonus adjustment).
 Before running elsewhere, change the `LOAD DATA LOCAL INFILE` paths in the SQL file to your own folder.
+
+## MySQL run (verified)
+`final_submission.sql` = `01_create_and_load_mysql.sql` + `02_analysis_mysql.sql`.
+Tested on MySQL (Homebrew, port 3307) from a fresh database with zero errors.
+Output is saved in `outputs/mysql/final_run_output.txt` and matches the SQLite results
+(56 Buys / 57 Sells, TCS +52.4% and Infosys +38.2% after bonus adjustment).
+Before running elsewhere, change the `LOAD DATA LOCAL INFILE` paths in the SQL file to your own folder.
