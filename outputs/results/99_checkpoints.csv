@@ -1,0 +1,14 @@
+checkpoint,status
+"T1  889 trading days, 2015-01-01 .. 2018-07-31",PASS
+T2  Eicher top close > 32000,PASS
+T3  TCS 2016 avg = 2419.00,PASS
+"T4  six NULL rows, two distinct dates",PASS
+T5  bajaj1 889 rows; first ma20 2015-01-29 = 2415.53,PASS
+T5  first ma50 2015-03-13 = 2283.80,PASS
+T5  ma20 on 2018-07-31 = 2918.51,PASS
+"T6  master_table 889 rows, 7 cols, bajaj 2700.70 / tvs 517.45",PASS
+"T7  first Buy 2015-05-18, first Sell 2015-08-24",PASS
+"T8  counts add up to 889, |Buy-Sell| <= 1",PASS
+"T9  2015-05-18 -> Buy, 2016-01-04 -> Hold",PASS
+"T10 totals: 56 Buys, 57 Sells",PASS
+T11 TVS tops list at 86.9%,PASS

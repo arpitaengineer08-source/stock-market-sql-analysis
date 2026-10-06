@@ -1,0 +1,7 @@
+table,rows_raw,rows_clean,duplicate_dates,first_date,last_date,null_cells,rows_with_nonpositive_price
+bajaj_auto,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
+eicher_motors,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
+hero_motocorp,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
+infosys,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
+tcs,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
+tvs_motors,889,889,0,2015-01-01,2018-07-31,deliverable_qty=1; pct_deli_qty=1,0
